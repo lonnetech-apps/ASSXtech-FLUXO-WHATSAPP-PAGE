@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Smartphone, Laptop, Tv, Video, Zap, ShieldCheck, ArrowDown, Sparkles } from 'lucide-react';
+import { logoImg, mosaicImg } from '../assets/images';
 
 interface HeroProps {
   onScrollToChat: () => void;
@@ -63,7 +64,7 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToChat }) => {
           <div className="relative w-32 h-32 sm:w-36 sm:h-36 rounded-full p-1 bg-gradient-to-b from-cyan-400 via-indigo-600 to-purple-600 shadow-2xl shadow-cyan-500/30">
             <div className="w-full h-full rounded-full overflow-hidden bg-[#070b14] p-1 flex items-center justify-center border-2 border-cyan-400/50">
               <img
-                src="/src/assets/images/xpace_fiber_logo_1793928666467.jpg"
+                src={logoImg}
                 alt="Logo Xpace Fibra Internet"
                 className="w-full h-full object-cover rounded-full transform group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
@@ -119,7 +120,7 @@ export const Hero: React.FC<HeroProps> = ({ onScrollToChat }) => {
             <div className="relative aspect-[16/9] sm:aspect-[21/9] w-full overflow-hidden bg-slate-950">
               {/* Mosaic Image Asset */}
               <img
-                src="/src/assets/images/mosaic_internet_scenarios_1793928667893.jpg"
+                src={mosaicImg}
                 alt="Mosaico de cenários de uso da internet fibra: no celular, no computador, jogando na TV e em videoconferência"
                 className="w-full h-full object-cover object-center transform scale-[1.01] group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"

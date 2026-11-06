@@ -8,6 +8,7 @@ import {
 import { FiberPlan, LeadData, ChatMessage } from '../types';
 import { FIBER_PLANS } from '../data/plans';
 import { soundEffects } from '../utils/audio';
+import { logoImg } from '../assets/images';
 
 interface WhatsAppChatModalProps {
   isOpen: boolean;
@@ -448,7 +449,7 @@ Gostaria de agendar a instalação técnica gratuita!`;
             {/* Avatar with circular fiber logo */}
             <div className="relative w-10 h-10 rounded-full overflow-hidden bg-slate-900 border border-emerald-500/40 shrink-0">
               <img
-                src="/src/assets/images/xpace_fiber_logo_1793928666467.jpg"
+                src={logoImg}
                 alt="Xpace Fibra Assistente"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

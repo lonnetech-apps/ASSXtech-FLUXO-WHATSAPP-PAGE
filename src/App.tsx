@@ -7,6 +7,7 @@ import { SpeedCalculator } from './components/SpeedCalculator';
 import { Footer } from './components/Footer';
 import { FiberPlan } from './types';
 import { MessageSquareText, Sparkles, ExternalLink, ShieldCheck } from 'lucide-react';
+import { logoImg } from './assets/images';
 
 export default function App() {
   const [isChatModalOpen, setIsChatModalOpen] = useState(false);
@@ -49,7 +50,7 @@ export default function App() {
               <div className="flex items-start gap-4">
                 <div className="relative w-16 h-16 rounded-full overflow-hidden bg-slate-900 border-2 border-emerald-400 shrink-0 shadow-lg shadow-emerald-500/20">
                   <img
-                    src="/src/assets/images/xpace_fiber_logo_1793928666467.jpg"
+                    src={logoImg}
                     alt="Xpace Fibra Assistente"
                     className="w-full h-full object-cover"
                     referrerPolicy="no-referrer"
