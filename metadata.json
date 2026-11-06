@@ -1,0 +1,6 @@
+{
+  "name": "Xpace Fibra - Internet do Futuro",
+  "description": "Página futurista de venda de internet fibra óptica com mostruário de uso em mosaico e assistente interativo de atendimento estilo WhatsApp para contratação de planos de 350 Mega a 1 Giga.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
